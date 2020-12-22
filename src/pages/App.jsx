@@ -1,9 +1,9 @@
 import React from 'react';
 import 'boxicons/dist/boxicons';
-import '../assets/styles/App.scss';
 import Navbar from '../components/Navbar';
 import Row from '../components/Row';
 import requests from '../requests';
+import '../assets/styles/App.scss';
 
 const App = () => {
   return (
