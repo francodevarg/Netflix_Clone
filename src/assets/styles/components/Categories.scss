@@ -1,0 +1,9 @@
+@import '../Vars.scss';
+
+.categories__title {
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  padding-left: $padding-container;
+  width: 100%;
+}

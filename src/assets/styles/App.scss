@@ -1,3 +1,88 @@
-body{
-  background:red;
+@import './Vars.scss';
+@import './Media.scss';
+
+/* General settings*/
+/* 16px = 1rem*/
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+body {
+  background: $semi-black;
+  font-family: $theme-font;
+  color: $white;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input {
+  text-indent: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: 0;
+  content: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+main {
+  padding-top: 4rem;
+}
+
+.container {
+  padding: 0 1rem;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  color: $semi-black;
+  background-color: $semi-black;
 }

@@ -1,0 +1,41 @@
+@import '../Vars.scss';
+
+.carousel {
+  overflow: auto;
+  padding-left: $padding-container;
+  width: 100%;
+  padding-top: 8px;
+}
+
+.carousel__btn {
+  display: none;
+}
+
+/*Carousel Container*/
+.carousel__container {
+  transition: 450ms transform, 450ms -webkit-transform;
+  white-space: nowrap;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+/*Carousel CONTAINER && ITEM OPACITY AND SCALE */
+.carousel__container:hover .carousel-item {
+  opacity: 0.3;
+}
+
+.carousel__container:hover .carousel-item:hover {
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+  opacity: 1;
+  z-index: 3;
+  transition-delay: 0.5s;
+}
+/* ITEM LARGE*/
+.carousel__container:hover .carousel-item--large:hover {
+  -webkit-transform: scale(1.18);
+  transform: scale(1.18);
+  opacity: 1;
+  z-index: 3;
+  transition-delay: 0.5s;
+}
