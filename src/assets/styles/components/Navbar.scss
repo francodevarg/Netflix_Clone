@@ -7,7 +7,7 @@
   /*Fixed Top Navbar*/
   position: fixed;
   z-index: 999;
-  height: 3rem;
+  height: 3.75rem;
   width: 100%;
   background-color: black;
 }
@@ -139,6 +139,7 @@
   z-index: -1;
   background: black;
   overflow-y: auto;
+  padding-left: 1rem;
   /*
   padding-left: 1.75rem;
   */

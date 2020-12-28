@@ -70,7 +70,7 @@ img {
 }
 
 main {
-  padding-top: 4rem;
+  padding-top: 4.5rem;
 }
 
 .container {
@@ -85,4 +85,12 @@ main {
 ::selection {
   color: $semi-black;
   background-color: $semi-black;
+}
+
+.no-display {
+  display: none;
+}
+
+.yes-display {
+  display: block;
 }
