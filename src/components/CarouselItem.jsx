@@ -3,13 +3,17 @@ import '../assets/styles/components/CarouselItem.scss';
 
 const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/original';
 
-const CarouselItem = ({ name, title, posterPath, backdropPath, voteAverage, isLargeRow }) => {
-  const largeItem = isLargeRow ? 'carousel-item carousel-item--large' : 'carousel-item';
-  const largeImg = isLargeRow ? 'carousel-item__img carousel-item__img--large' : 'carousel-item__img';
+const CarouselItem = ({ name, title, posterPath, backdropPath, voteAverage, isLargeRow}) => {
+  const largeItem = isLargeRow ? 'carousel-item--large' : '';
+  const largeImg = isLargeRow ? 'carousel-item__img--large' : '';
 
   return (
-    <div className={`${largeItem}`}>
-      <img className={`${largeImg}`} src={`${IMAGE_BASE_URL}${isLargeRow ? posterPath : backdropPath}`} alt={name} />
+    <div className={`carousel-item ${largeItem}`}>
+      <img
+        className={`carousel-item__img ${largeImg}`}
+        src={`${IMAGE_BASE_URL}${isLargeRow ? posterPath : backdropPath}`}
+        alt={name}
+      />
       <div className='carousel-item__detail'>
         <div className='detail-action'>
           <a className='action action--view' href='#t'>

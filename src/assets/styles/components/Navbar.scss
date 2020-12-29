@@ -8,8 +8,22 @@
   position: fixed;
   z-index: 999;
   height: 3.75rem;
+  opacity: 0.89;
   width: 100%;
-  background-color: black;
+  background: rgb(20, 20, 20);
+  background: linear-gradient(
+    180deg,
+    rgba(20, 20, 20, 0.5382528011204482) 0%,
+    rgba(103, 103, 103, 0.3253676470588235) 25%,
+    rgba(161, 161, 161, 0.01724439775910369) 100%
+  );
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar--active {
+  opacity: 1;
+  background-color: #141414;
+  transition: all 0.5s ease-in-out;
 }
 
 /*Navbar Left Side*/
@@ -20,7 +34,6 @@
 }
 
 .navbar__burger-btn {
-  background: black;
   /*Take care of this grey*/
   color: #bebebe;
 }

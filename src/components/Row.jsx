@@ -4,7 +4,7 @@ import Carousel from './Carousel';
 import CarouselItem from './CarouselItem';
 import axios from '../axios';
 
-const Row = ({ title, fetchURL, isLargeRow }) => {
+const Row = ({ title, fetchURL, isLargeRow}) => {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
     axios.get(fetchURL).then((response) => {
