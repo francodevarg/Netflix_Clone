@@ -75,7 +75,7 @@ const Navbar = () => {
         {/*<!-- Left Side -->*/}
         <div className='navbar__items--left'>
           <button className='navbar__burger-btn' id='burger-btn' onClick={toggleMenuBurger} type='button'>
-            {!burgerMenu && <box-icon name='menu' color='#aaa' />}
+            {!burgerMenu && <box-icon name='menu' color='#fff' />}
             {burgerMenu && <box-icon name='x-circle' type='solid' color='#fff' />}
           </button>
           {/*<!-- Logo -->*/}
@@ -96,7 +96,7 @@ const Navbar = () => {
         {/* <!-- Right Side --> */}
         <div className='navbar__items--right'>
           <button className='navbar__search-btn' id='search-btn' type='button' onClick={toggleSearchMenu}>
-            <box-icon name='search' color='#aaa' />
+            <box-icon name='search' color='#fff' />
           </button>
           {/* <!-- Show when is not mobile -->
             <!-- <SearchDropdown/> -->
@@ -106,7 +106,7 @@ const Navbar = () => {
             <!-- End of Show when not mobile -->
           */}
           <button className='navbar__user-btn' id='user-btn' onClick={toggleUserMenu} type='button'>
-            {!userMenu && <box-icon name='user' color='#aaa' />}
+            {!userMenu && <box-icon name='user' color='#fff' />}
             {userMenu && <box-icon name='user' type='solid' color='#fff' />}
           </button>
           {/*<!-- End of Right Side -->*/}
@@ -115,7 +115,33 @@ const Navbar = () => {
 
       {/*<!-- Mobile Containers -->*/}
       <div className={`mobile__menu mobile-burger container ${activeBurger}`} id='menu-burger'>
-        Movies Menu
+        <ul className='mobile-burger__items'>
+          <li className='mobile-burger__item'>
+            <a className='mobile-burger__link mobile-burger__link--active' href='#Ssas'>
+              Inicio
+            </a>
+          </li>
+          <li className='mobile-burger__item'>
+            <a className='mobile-burger__link' href='#Svf'>
+              Series
+            </a>
+          </li>
+          <li className='mobile-burger__item'>
+            <a className='mobile-burger__link' href='#Ssawq'>
+              Películas
+            </a>
+          </li>
+          <li className='mobile-burger__item'>
+            <a className='mobile-burger__link' href='#Sgadsa'>
+              Novedades populares
+            </a>
+          </li>
+          <li className='mobile-burger__item'>
+            <a className='mobile-burger__link' href='#Sbttt'>
+              Ver de nuevo
+            </a>
+          </li>
+        </ul>
       </div>
       <div className={`mobile__menu mobile-user container ${activeUser}`} id='menu-user'>
         User Menu

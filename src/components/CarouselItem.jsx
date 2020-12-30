@@ -3,7 +3,7 @@ import '../assets/styles/components/CarouselItem.scss';
 
 const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/original';
 
-const CarouselItem = ({ name, title, posterPath, backdropPath, voteAverage, isLargeRow}) => {
+const CarouselItem = ({ name, title, posterPath, backdropPath, voteAverage, isLargeRow }) => {
   const largeItem = isLargeRow ? 'carousel-item--large' : '';
   const largeImg = isLargeRow ? 'carousel-item__img--large' : '';
 
