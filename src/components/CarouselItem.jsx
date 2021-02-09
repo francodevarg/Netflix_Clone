@@ -16,12 +16,22 @@ const CarouselItem = ({ name, title, posterPath, backdropPath, voteAverage, isLa
       />
       <div className='carousel-item__detail'>
         <div className='detail-action'>
-          <a className='action action--view' href='#t'>
-            <box-icon name='chevron-down' size='sm' color='black' />
+          <a className='action' href='#t'>
+            <box-icon name='chevron-down' type='solid' color='#a0a0a0' border='circle' size='md'/>
           </a>
-          <a className='action action--add' href='#te'>
-            <box-icon name='plus' size='sm' color='#c0c0c0' />
+          <a className='action' href='#te'>
+            <box-icon name='plus' color='#a0a0a0' border='circle' size='md' />
           </a>
+          { isLargeRow && 
+                    <>
+                    <a className='action' href='#te'>
+                      <box-icon name='like' color='#a0a0a0' border='circle' size='md' />
+                    </a>
+                    <a className='action' href='#te'>
+                        <box-icon name='dislike' color='#a0a0a0' border='circle' size='md' />
+                    </a>
+                    </>
+          }
         </div>
         <p className='detail__title'>{name || title}</p>
         <p className='detail__subtitle'>
