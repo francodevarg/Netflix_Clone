@@ -10,19 +10,13 @@
   height: 3.75rem;
   opacity: 0.89;
   width: 100%;
-  background: rgb(20, 20, 20);
-  background: linear-gradient(
-    180deg,
-    rgba(20, 20, 20, 0.5382528011204482) 0%,
-    rgba(103, 103, 103, 0.3253676470588235) 25%,
-    rgba(161, 161, 161, 0.01724439775910369) 100%
-  );
+  background: linear-gradient(to bottom,rgba(0, 0, 0, 0.342) 10%,rgba(0,0,0,0));
   transition: all 0.5s ease-in-out;
 }
 
 .navbar--active {
   opacity: 1;
-  background-color: #141414;
+  background: #141414;
   transition: all 0.5s ease-in-out;
 }
 
@@ -46,8 +40,12 @@
 }
 
 /*Dont show on mobile list */
-.navbar__list {
+.navbar__list,.list__right{
   display: none;
+}
+
+.navbar__items--right{
+  display: block;
 }
 
 /*Navbar Right Side*/

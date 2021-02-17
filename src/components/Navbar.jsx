@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../assets/styles/components/Navbar.scss';
 import logo from '../assets/static/netflix-logo.png';
+import avatar from '../assets/static/avatar-yellow.jpg';
 import ResponsiveBurgerMenu from './ResponsiveBurgerMenu';
 import ResponsiveUserMenu from './ResponsiveUserMenu';
 import ResponsiveSearch from './ResponsiveSearch';
@@ -41,11 +42,12 @@ const Navbar = () => {
           </figure>
           {/*<!-- Shown when is not mobile -->*/}
           <ul className='navbar__list'>
-            <li className='navbar__item'>Inicio</li>
+            <li className='navbar__item item--active'>Inicio</li>
             <li className='navbar__item'>Series</li>
             <li className='navbar__item'>Películas</li>
-            <li className='navbar__item'>Novedades Populares</li>
-            <li className='navbar__item'>Mi Lista</li>
+            <li className='navbar__item'>Novedades populares</li>
+            <li className='navbar__item'>Mi lista</li>
+            <li className='navbar__item'>Ver de nuevo</li>
           </ul>
           {/*<!-- End of Left Side --> */}
         </div>
@@ -54,9 +56,19 @@ const Navbar = () => {
           <button className='navbar__search-btn' id='search-btn' type='button' onClick={toggleSearchMenu}>
             <box-icon name='search' color='#fff' />
           </button>
+          <ul className="list__right">
+            <li className='navbar__item'><box-icon name='search-alt-2' color='#ffffff' ></box-icon></li>
+            <li className='navbar__item'>NIÑOS</li>
+            <li className='navbar__item'><box-icon name='gift' color='#ffffff' ></box-icon></li>
+            <li className='navbar__item'><box-icon name='bell' type='solid' color='#ffffff' ></box-icon></li>
+            <li className="navbar__item">
+              <figure>
+                <img className='avatar-profile' src={avatar} alt=""/>
+              </figure>
+            </li>
+          </ul>
           {/* <!-- Show when is not mobile -->
             <!-- <SearchDropdown/> -->
-            <!-- Niños -->
             <!-- Icono Regalo -->
             <!-- Icono Noticaciones -->
             <!-- End of Show when not mobile -->

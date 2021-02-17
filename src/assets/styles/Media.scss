@@ -1,5 +1,64 @@
 /*Responsive*/
 @media only screen and (min-width: 600px) {
+  .navbar.container{
+    padding:2.15rem;
+  }
+  .navbar--active{
+    background: #141414;
+  }
+  .navbar__burger-btn,.navbar__search-btn,.navbar__user-btn{
+    display: none;
+  }
+
+  .navbar__logo{
+    padding: 0;
+    width: 7rem;
+    height: 3.25rem;
+  }
+  .navbar__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:1rem ;
+  }
+  .list__right{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .avatar-profile{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 5px;
+  }
+
+  .navbar__item{
+    margin-right: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(241, 241, 241, 0.863);
+    list-style: none;
+  }
+
+  .navbar__item:hover{
+    cursor:pointer;
+    color: white;
+  }
+
+  .item--active{
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+  }
+
+  .categories{
+    padding-left: 1.75rem;
+  }
+  .carousel{
+    padding-left: 2.75rem;
+  }
+
   .carousel__btn {
     position: absolute;
     display: flex;
