@@ -1,3 +1,7 @@
+.display-on-tablet-and-so-on{
+  display: none;
+}
+
 /*   Navbar     */
 .navbar {
   /*Horizontal Navbar*/
@@ -14,6 +18,7 @@
   transition: all 0.5s ease-in-out;
 }
 
+/* Effect while scrolling*/
 .navbar--active {
   opacity: 1;
   background: #141414;
@@ -21,10 +26,15 @@
 }
 
 /*Navbar Left Side*/
-.navbar__items--left {
+.content-left,
+.content-right {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.list-right{
+  position: relative;
 }
 
 .navbar__burger-btn {
@@ -39,15 +49,6 @@
   margin-right: 1rem;
 }
 
-/*Dont show on mobile list */
-.navbar__list,.list__right{
-  display: none;
-}
-
-.navbar__items--right{
-  display: block;
-}
-
 /*Navbar Right Side*/
 .navbar__search-btn {
   color: #bebebe;
@@ -57,6 +58,7 @@
 .navbar__user-btn {
   color: #bebebe;
 }
+
 
 /*============== */
 /*End of Navbar */

@@ -1,5 +1,6 @@
 @import '../Vars.scss';
 
+
 .banner {
   color: white;
   object-fit: contain;
@@ -17,7 +18,7 @@
 }
 
 .banner__title {
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +27,9 @@
   padding: 0 $padding-container;
   padding-top: 2.5rem;
 }
-
+.banner__overview{
+  display: none;
+}
 .banner__actions {
   display: flex;
   justify-content: center;
@@ -44,22 +47,51 @@
   color: white;
 }
 
-.banner__action-play {
-  text-decoration: none;
-  color: black;
-  background: white;
-  padding-top: 5px;
-  padding-left: 15px;
-  padding-bottom: 5px;
-  padding-right: 20px;
+.banner__action-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  margin: 0 35px;
-  margin-right: 25px;
+  text-decoration: none;
+  width: max-content;
+  padding: .2rem 1rem;
+  padding-right: 1.3rem;
+  margin: 0 1.5rem;
+  margin-left: 2rem;
+}
+.btn-play{
+  color:black;
+  background-color: white;
 }
 
-.action-text-play {
-  padding-top: 4px;
+.btn-info{
+  color:white;
+  background-color: #4141418c;
+}
+
+.banner__action-add-list,
+.banner__action-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.action-text {
+  font-size: 16px;
+  font-weight: 550;
+  padding-top: 2px;
+}
+
+
+.display-only-phone{
+  display: flex;
+}
+.display-only-tablet{
+  display: none;
+}
+.display-only-desktop{
+  display: none;
 }

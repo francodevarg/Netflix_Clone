@@ -7,6 +7,11 @@
   padding-top: 8px;
 }
 
+/*hide the scrollbar on carousel */
+.carousel::-webkit-scrollbar {
+  display:none;
+}
+
 .carousel__btn {
   display: none;
 }

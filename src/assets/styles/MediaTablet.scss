@@ -1,0 +1,70 @@
+/*Responsive Screen : Tablet*/
+@media only screen and (min-width: 600px) {
+  .display-only-phone{
+    display: none;
+  }
+  
+  .display-only-desktop{
+    display: none;
+  }
+
+  .display-only-tablet{
+    display: flex;
+  }
+
+  .navbar__logo{
+    padding: 0;
+    width: 7rem;
+    height: 3.25rem;
+  }
+  
+
+  .list-right,
+  .list-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .navbar__item{
+    margin-right: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(241, 241, 241, 0.863);
+    list-style: none;
+  }
+
+  .navbar__item:hover{
+    cursor:pointer;
+    color: white;
+  }
+
+  .item--active{
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+  }
+
+  .carousel,
+  .categories__title{
+    padding-left: 1.7rem;
+  }
+
+  .banner__actions{
+    justify-content: center;
+  }
+
+  .banner__title{
+    font-size: 25px;
+  }
+
+  .banner__action-btn{
+    margin-right: 0;
+  }
+
+  .action-text{
+    padding-left: 5px;
+  }
+  
+}
+

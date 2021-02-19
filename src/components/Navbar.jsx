@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../assets/styles/components/Navbar.scss';
 import logo from '../assets/static/netflix-logo.png';
-import avatar from '../assets/static/avatar-yellow.jpg';
+import ProfileMenu from './ProfileMenu';
 import ResponsiveBurgerMenu from './ResponsiveBurgerMenu';
 import ResponsiveUserMenu from './ResponsiveUserMenu';
 import ResponsiveSearch from './ResponsiveSearch';
@@ -31,49 +31,49 @@ const Navbar = () => {
     <>
       <nav className='navbar container'>
         {/*<!-- Left Side -->*/}
-        <div className='navbar__items--left'>
-          <button className='navbar__burger-btn' id='burger-btn' onClick={toggleMenuBurger} type='button'>
+        <div className='content-left'>
+          {/*<!-- Burger Button Mobile -->*/}
+          <button className='navbar__burger-btn display-only-phone' onClick={toggleMenuBurger} id='burger-btn' type='button'>
             {!burgerMenu && <box-icon name='menu' color='#fff' />}
-            {burgerMenu && <box-icon name='x-circle' type='solid' color='#fff' />}
+            {burgerMenu && <box-icon name='x-circle' type='solid' color='#fff' />}            
           </button>
           {/*<!-- Logo -->*/}
           <figure>
             <img className='navbar__logo' src={logo} alt='Netflix Logo' />
           </figure>
-          {/*<!-- Shown when is not mobile -->*/}
-          <ul className='navbar__list'>
+          {/*<!-- Shown when is tablet -->*/}
+          <ul className='list-left display-on-tablet-and-so-on'>
             <li className='navbar__item item--active'>Inicio</li>
             <li className='navbar__item'>Series</li>
             <li className='navbar__item'>Películas</li>
             <li className='navbar__item'>Novedades populares</li>
-            <li className='navbar__item'>Mi lista</li>
-            <li className='navbar__item'>Ver de nuevo</li>
+            <li className='navbar__item display-only-desktop'>Mi lista</li>
+            <li className='navbar__item display-only-desktop'>Ver de nuevo</li>
           </ul>
           {/*<!-- End of Left Side --> */}
         </div>
         {/* <!-- Right Side --> */}
-        <div className='navbar__items--right'>
-          <button className='navbar__search-btn' id='search-btn' type='button' onClick={toggleSearchMenu}>
+        <div className='content-right'>
+          <button className='navbar__search-btn display-only-phone' onClick={toggleSearchMenu} id='search-btn' type='button'>
             <box-icon name='search' color='#fff' />
           </button>
-          <ul className="list__right">
-            <li className='navbar__item'><box-icon name='search-alt-2' color='#ffffff' ></box-icon></li>
-            <li className='navbar__item'>NIÑOS</li>
-            <li className='navbar__item'><box-icon name='gift' color='#ffffff' ></box-icon></li>
-            <li className='navbar__item'><box-icon name='bell' type='solid' color='#ffffff' ></box-icon></li>
-            <li className="navbar__item">
-              <figure>
-                <img className='avatar-profile' src={avatar} alt=""/>
-              </figure>
+          <ul className="list-right display-on-tablet-and-so-on">
+            <li className='navbar__item'>
+              <box-icon name='search-alt-2' color='#fff'/>
             </li>
+            <li className='navbar__item display-only-desktop'>NIÑOS</li>
+            <li className='navbar__item display-only-desktop'>
+              <box-icon name='gift' color='#fff'/>
+            </li>
+            <li className='navbar__item'>
+              <box-icon name='bell' type='solid' color='#fff' />
+            </li>
+            <li className="navbar__item">
+              <ProfileMenu/>
+            </li>
+
           </ul>
-          {/* <!-- Show when is not mobile -->
-            <!-- <SearchDropdown/> -->
-            <!-- Icono Regalo -->
-            <!-- Icono Noticaciones -->
-            <!-- End of Show when not mobile -->
-          */}
-          <button className='navbar__user-btn' id='user-btn' onClick={toggleUserMenu} type='button'>
+          <button className='navbar__user-btn display-only-phone' onClick={toggleUserMenu} id='user-btn' type='button'>
             {!userMenu && <box-icon name='user' color='#fff' />}
             {userMenu && <box-icon name='user' type='solid' color='#fff' />}
           </button>

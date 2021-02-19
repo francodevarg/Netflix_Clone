@@ -20,23 +20,31 @@ const Banner = () => {
       className='banner'
       style={{
         backgroundSize: 'cover',
+        backgroundRepeat:'no-repeat',
         backgroundImage: `url('${IMAGE_BASE_URL}/${movie?.backdrop_path}')`,
-        backgroundPosition: 'center center',
+        backgroundPosition: 'center 25%',
       }}
     >
       <div className='banner__contents'>
         <div className='banner--fadeBottom'>
-          <h1 className='banner__title'>{movie?.title || movie?.name || movie?.original_name}</h1>
+          <div className='banner__data'>
+            <h1 className='banner__title'>{movie?.title || movie?.name || movie?.original_name}</h1>
+            <p className="banner__overview display-only-desktop">{movie?.overview}</p>
+          </div>
           <div className='banner__actions'>
-            <a className='banner__action-detail' href='#add'>
+            <a className='banner__action-add-list display-only-phone' href='#add'>
               <box-icon name='plus' color='#ffffff' />
               <small>Mi lista</small>
             </a>
-            <a className='banner__action-play' href='#play'>
+            <a className='banner__action-btn btn-play' href='#play'>
               <box-icon name='play' size='sm' />
-              <span className='action-text-play'>Reproducir</span>
+              <span className='action-text'>Reproducir</span>
             </a>
-            <a className='banner__action-detail' href='#info'>
+            <a className='banner__action-btn btn-info display-only-tablet' href='#play'>
+              <box-icon name='info-circle' size='sm' color='#FFF' />
+              <span className='action-text'>Más información</span>
+            </a>
+            <a className='banner__action-info display-only-phone' href='#info'>
               <box-icon name='info-circle' type='solid' color='#ffffff' />
               <small>Información</small>
             </a>

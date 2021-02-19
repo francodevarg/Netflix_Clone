@@ -1,0 +1,38 @@
+.content-right{
+    position: relative;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .avatar-profile{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 5px;
+    margin-right: .25rem;
+  }
+
+    .profile__menu{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    margin-top: .8rem;
+    border-radius: 10px;
+    transform: translateX(-150px);
+    background-color: #141414;
+}
+.profile-list{
+  padding: 1rem 1rem;
+}
+.profile__item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.no-display{
+    display: none;
+}
