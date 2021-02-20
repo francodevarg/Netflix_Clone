@@ -11,7 +11,7 @@ const Banner = () => {
 
   useEffect(() => {
     axios.get(requests.fetchTrending).then((response) => {
-      setMovie(response.data.results[Math.floor(Math.random() * response.data.results.length - 1)]);
+      setMovie(response.data.results[Math.floor(Math.random() * (response.data.results.length - 1))]);
     });
   }, []);
 
@@ -22,7 +22,6 @@ const Banner = () => {
         backgroundSize: 'cover',
         backgroundRepeat:'no-repeat',
         backgroundImage: `url('${IMAGE_BASE_URL}/${movie?.backdrop_path}')`,
-        backgroundPosition: 'center 25%',
       }}
     >
       <div className='banner__contents'>
@@ -37,11 +36,13 @@ const Banner = () => {
               <small>Mi lista</small>
             </a>
             <a className='banner__action-btn btn-play' href='#play'>
-              <box-icon name='play' size='sm' />
+              <div className="play-btn-style">
+                <box-icon name='play' size='md'/>
+              </div>
               <span className='action-text'>Reproducir</span>
             </a>
-            <a className='banner__action-btn btn-info display-only-tablet' href='#play'>
-              <box-icon name='info-circle' size='sm' color='#FFF' />
+            <a className='banner__action-btn btn-info display-when-tablet' href='#play'>
+              <box-icon name='info-circle' color='#FFF' />
               <span className='action-text'>Más información</span>
             </a>
             <a className='banner__action-info display-only-phone' href='#info'>

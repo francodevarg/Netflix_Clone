@@ -42,7 +42,7 @@ const Navbar = () => {
             <img className='navbar__logo' src={logo} alt='Netflix Logo' />
           </figure>
           {/*<!-- Shown when is tablet -->*/}
-          <ul className='list-left display-on-tablet-and-so-on'>
+          <ul className='list-left display-when-tablet'>
             <li className='navbar__item item--active'>Inicio</li>
             <li className='navbar__item'>Series</li>
             <li className='navbar__item'>Películas</li>
@@ -57,7 +57,7 @@ const Navbar = () => {
           <button className='navbar__search-btn display-only-phone' onClick={toggleSearchMenu} id='search-btn' type='button'>
             <box-icon name='search' color='#fff' />
           </button>
-          <ul className="list-right display-on-tablet-and-so-on">
+          <ul className="list-right display-when-tablet">
             <li className='navbar__item'>
               <box-icon name='search-alt-2' color='#fff'/>
             </li>

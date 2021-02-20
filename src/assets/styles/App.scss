@@ -1,6 +1,6 @@
 @import './Vars.scss';
 @import './MediaTablet.scss';
-@import './MediaLaptop.scss';
+@import './MediaDesktop.scss';
 
 /* General settings*/
 /* 16px = 1rem*/
@@ -92,3 +92,9 @@ img {
 .yes-display {
   display: block;
 }
+/* we got display when & display only
+*  when -> this screen and so on
+*  only -> this and only this
+*/
+
+

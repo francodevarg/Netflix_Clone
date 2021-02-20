@@ -1,17 +1,30 @@
 @media only screen and (min-width: 1024px) {
     /* For Navbar */
+
+    .display-only-phone{
+      display: none;
+    }
+    
     .display-only-desktop{
       display: flex;
     }
 
+    .display-only-tablet{
+      display: none;
+    }
+
 
     .banner{
-      height: 678px;
+      height: 578px;
       object-fit: contain;
     }
 
+    .banner__contents {
+      padding-top: 19rem;
+      height: 250px;
+    }
     .banner--fadeBottom {
-      height: 20.5rem;
+      height: 17.4rem;
     }
     .banner__actions{
       display: flex;
@@ -38,9 +51,20 @@
     }
     .banner__title{
       padding: 0;
-      font-size: 48px;
-      max-width:1000px;
+      font-size: 40px;
+      max-width:75%;
+      text-align: start;
     }
+
+    .banner__overview{
+      width: 526px;
+      height: 2.3rem;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; 
+    }
+
     /*Carousel buttons for laptops*/
     .carousel__btn {
         position: absolute;
@@ -83,14 +107,4 @@
         font-size: 50px;
       }
 
-
-      
-      .banner__overview{
-        width: 526px;
-        height: 2.3rem;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical; 
-      }
   }

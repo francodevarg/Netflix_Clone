@@ -11,6 +11,9 @@
   .display-only-tablet{
     display: flex;
   }
+  .display-when-tablet{
+    display: flex;
+  }
 
   .navbar__logo{
     padding: 0;
@@ -50,16 +53,20 @@
     padding-left: 1.7rem;
   }
 
+  .banner{
+    background-position: center 25%;
+  }
+
   .banner__actions{
     justify-content: center;
   }
 
   .banner__title{
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .banner__action-btn{
-    margin-right: 0;
+    margin: 0 20px;
   }
 
   .action-text{
