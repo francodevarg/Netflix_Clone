@@ -65,14 +65,14 @@
 
 /**/
 .mobile__menu {
-  background: black;
+  background: #141414;
   margin-top: 3rem;
   color: white;
   height: 100%;
   width: 100%;
   position: fixed;
   text-align: center;
-  transition: all 0.5s ease-in-out;
+  transition: all 4s ease-in;
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -213,6 +213,7 @@
 .active-mobile {
   display: flex;
   justify-content: center;
+  transition: all .5s ease-in;
 }
 
 .white-btn {
