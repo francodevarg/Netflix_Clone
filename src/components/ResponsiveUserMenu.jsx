@@ -24,6 +24,14 @@ function ResponsiveUserMenu({toggler}) {
                         <box-icon name='bell' type='solid' size='sm' color='#fff' ></box-icon>
                         <h3>Notificaciones</h3>
                     </div>
+                    <div className="profile__my-list">
+                        <box-icon name='check-square' type='solid' color='#ffffff' ></box-icon>
+                        <h3>Mi lista</h3>
+                    </div>
+                    <div className="profile__likes">
+                        <box-icon name='heart' type='solid' color='#ffffff' ></box-icon>
+                        <h3>Favoritos</h3>
+                    </div>
                     <div className="profile__gift">
                         <box-icon name='gift' type='solid' color='#ffffff' ></box-icon>
                         <h3>Invitar a un amigo</h3>

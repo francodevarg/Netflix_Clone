@@ -54,14 +54,14 @@
     margin-top: 10px;
 }
 
-.profile__notifications, .profile__gift{
+.profile__notifications, .profile__gift, .profile__my-list, .profile__likes{
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     margin-top: 16px;
 }
-.profile__notifications > h3, .profile__gift > h3{
+.profile__notifications > h3, .profile__gift > h3 , .profile__my-list > h3 ,.profile__likes > h3{
     margin-left: 8px;
 }
 .profile__separator{
