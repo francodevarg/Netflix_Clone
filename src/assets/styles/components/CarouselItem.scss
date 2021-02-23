@@ -79,10 +79,19 @@
   margin-right: 10px;
 }
 
+.action--play{
+  background: #a0a0a0;
+}
+
 .action:hover{
   border: 1.2px solid #ffffff;
   background-color: #141414;
 }
+
+.action--play:hover{
+  background:white;
+}
+
 
 .detail__title {
   color: white;
