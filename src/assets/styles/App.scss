@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import './Vars.scss';
 @import './MediaTablet.scss';
 @import './MediaDesktop.scss';
@@ -92,9 +93,16 @@ img {
 .yes-display {
   display: block;
 }
+
+.active-mobile {
+  display: flex;
+  justify-content: center;
+  transition: all .5s ease-in;
+}
 /* we got display when & display only
 *  when -> this screen and so on
 *  only -> this and only this
 */
+
 
 

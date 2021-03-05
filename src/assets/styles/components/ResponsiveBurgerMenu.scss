@@ -1,0 +1,41 @@
+.mobileBurger{
+  background: #141414;
+  margin-top: 3rem;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 998;
+}
+
+.mobileBurgerList{
+  display: flex;
+  padding-top: 3.8rem;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+  
+.mobileBurger__item {
+  margin: 2.5rem 0;
+}
+  
+  .mobileBurger__link {
+    text-decoration: none;
+    padding: 1rem 0.5rem;
+    color: white;
+    font-weight: 550;
+    margin: 2rem 0;
+  }
+  
+  .mobileBurger__link--active {
+    background: #ffffff;
+    padding: 0.5rem 2rem;
+    color: black;
+    border: 1px solid white;
+    border-radius: 4px;
+  }

@@ -1,22 +1,22 @@
-.mobile-user.container{
-    padding: 0 3rem;
-    padding-top: 60px;
-}
-
-.active-mobile {
-    display: flex;
-}
-
-.mobile-user__profile{
-    width: 100%;
+.mobileUser{
+    background: #141414;
+    color: white;
     height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 998;
+    display: none;
+}
+.mobileProfile{
+    width: 80%;
+    height: max-content;
+    padding-top: 4rem; //because container set up
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 }
 
-.profile__data{
+.mobileProfile__data{
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -24,13 +24,13 @@
     width: 100%;
 }
 
-.profile__img > img{
+.mobileProfile__img > img{
     width: 60px;
     height: 60px;
     border-radius: 5px;
 }
 
-.profile__current-user{
+.mobileProfile__current-user{
     margin-left: 16px;
     display: flex;
     flex-direction: column;
@@ -38,11 +38,11 @@
     width: max-content;
 }
 
-.profile__current-user > h5{
+.mobileProfile__current-user > h5{
     font-style: italic;
 }
 
-.profile__settings{
+.mobileProfile__settings{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,24 +50,31 @@
     margin-bottom: 32px;
 }
 
-.profile__settings > h4{
+.mobileProfile__settings > h4{
     margin-top: 10px;
 }
 
-.profile__notifications, .profile__gift, .profile__my-list, .profile__likes{
+.mobileProfile__notifications, .mobileProfile__gift, .mobileProfile__my-list, .mobileProfile__likes{
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     margin-top: 16px;
 }
-.profile__notifications > h3, .profile__gift > h3 , .profile__my-list > h3 ,.profile__likes > h3{
+.mobileProfile__notifications > h3, .mobileProfile__gift > h3 , .mobileProfile__my-list > h3 ,.mobileProfile__likes > h3{
     margin-left: 8px;
 }
-.profile__separator{
+.mobileProfile__separator{
     width: 100%;
     margin-top: 16px;
 }
+
+.account{
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
 
 .account__settings, .account__help{
     margin-top: 16px;
@@ -78,10 +85,12 @@
 }
 
 
-.profile__session{
+.account__session{
     margin-top: 48px;
     width: 100%;
     height: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-primary{
@@ -91,6 +100,8 @@
     border-radius: 5px;
     padding: 8px 10px;
     height: 100%;
-    width: 80%;
+    width: max-content;
     font-size: 16px;
 }
+/**
+*/

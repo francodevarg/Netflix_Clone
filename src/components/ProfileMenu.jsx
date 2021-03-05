@@ -1,8 +1,8 @@
 import React , {useState} from 'react'
+import '../assets/styles/components/ProfileMenu.scss';
 import avatarYellow from '../assets/static/avatar-yellow.png'
 import avatarGrayBlue from '../assets/static/avatar-gray-blue.png'
 import avatarKids from '../assets/static/avatar-kids.png'
-import '../assets/styles/components/Profile.scss';
 
 function ProfileMenu() {
 
